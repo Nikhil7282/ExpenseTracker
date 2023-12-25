@@ -13,7 +13,7 @@ export const ThemeContext =createContext(null); //Global state for theme
 
 function App() {
   const [theme,setTheme]=useState("light")
-
+  console.log(theme);
   const toggleTheme=()=>{
     setTheme((curr)=>(curr==="light"?"dark":"light"))
   };
